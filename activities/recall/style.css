@@ -1,0 +1,33 @@
+.container{
+    text-align: center;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 5.5s, color 5.5s;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container:hover {
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+}
+
+.left{
+    float: left;
+    width: 50%;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+img.left{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+}

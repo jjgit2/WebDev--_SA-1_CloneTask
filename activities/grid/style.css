@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(58, 73, 60);
+
+}
+
+.main{
+    margin-left: 280px;
+     position:fixed;
+     justify-content: center;
+     align-items: center;
+     margin-top:40px;
+     width: 60vw;
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+     column-gap: -200px;
+     row-gap: 0px;
+     
+
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    object-fit:cover;
+    object-position: center;
+    animation-timing-function: linear;
+     transition: width 2s, height 2s;
+}
+
+
+
+  
+  
+ .move{
+    width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+ }
+
+ img:hover{
+    width: 250px;
+  height: 300px;
+ }

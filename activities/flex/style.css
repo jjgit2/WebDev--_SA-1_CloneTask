@@ -1,0 +1,265 @@
+
+.Task1{
+    text-align: center;
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: rgb(185, 203, 238);
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    
+}
+
+.navbar {
+    display: flex; 
+    align-items: center;
+   
+     
+   
+
+    
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+
+.nav-list li a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(75, 26, 235);
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.nav-list li a:hover {
+    color: #000000;
+   
+}
+
+.Task2{
+    text-align: center;
+    align-items: center;
+
+
+}
+.tunga{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.card{
+  
+    display: flex;    
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+    max-width: 500px;
+    background-color: aquamarine;
+}
+
+
+.card img{ 
+    width: 40%;
+    height: 200px; 
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    object-fit:contain;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.card-dsgn{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    margin-left: 50px;
+    text-wrap:balance;
+}
+
+
+.card-title{
+    font-size: 24px;
+    font-weight: Italic;
+    margin-bottom: 20px;
+}
+
+.disc{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: rgb(116, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #a15353;
+}
+
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.gallery img{
+    width: 25%;
+    margin:10px;
+    object-fit: cover;
+    height:150px;
+    border-radius: 10px;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px #000000;
+    cursor: pointer;
+
+}
+
+@media (min-width: 768px){
+    .gallery img{
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px){
+    .gallery img{
+        width: 100%;
+    }
+}
+
+.quiz{
+    text-align: left;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 16x;
+    background-color: rgb(165, 114, 223);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.radio-btn{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    align-items: center;
+
+}
+
+.radio{
+    margin-right: 10px;
+
+}
+
+
+.quiz2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+
+.question{
+    margin-bottom: 20px;
+    background-color: rgb(237, 208, 169);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.amswers{
+    display:flex;
+    justify-content: space-between;
+    margin-top:10px;
+
+}
+
+.answer{
+    background-color: antiquewhite;
+    border:none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius:5px;
+
+}
+
+.answer:hover{
+    background-color: lightgray;
+}
+
+
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(0, 171, 114);
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.checkbox{
+    align-items: left;
+    margin-right:5px
+}
+
+.task-label{
+    flex-grow:1;
+}
+
+.del{
+    
+    margin-left:20px;
+    background-color: aquamarine;
+    border: none;
+    padding:10px 20px;
+    font-size:16;
+    cursor:pointer;
+    border-radius: 5px;
+    float: right;
+    
+}
+
+.del:hover{
+    background-color: #9cf082;
+}
+
+.task-checkbox:checked + .task-label{
+    text-decoration: line-through;
+    color: #b7acac;
+}
+
