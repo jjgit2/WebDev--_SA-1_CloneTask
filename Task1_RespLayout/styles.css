@@ -1,0 +1,548 @@
+body{
+
+   background-color:#e9e9e9; /*background color*/
+   
+}
+
+
+
+/*media queries of the body and the box behind the content*/
+@media screen and (min-width:720px){
+    body{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (min-width:1024px){
+    body{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.longbox{
+    margin-left: 50px; /*putting margin left and right  50px as for the specified instruction */
+    margin-right: 50px;
+    background-color: #ffffff;
+   
+}
+/*adding padding and margint to add space*/
+@media(min-width: 360px)
+{
+    .longbox{
+        margin:0px;
+        padding: 0px;
+    }  
+}
+
+@media(min-width: 540px) 
+{
+    .longbox{
+       margin: 0px;
+       padding: 0px;
+
+    }
+
+    
+}
+
+@media (min-width: 720px) 
+{
+    .longbox{
+       margin:20px;
+      padding: 0px;
+    }
+
+    
+}
+
+/*the logo on top of the content*/
+.logo {
+    width: 200px;
+    height:200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*image of the logo*/
+.logo img{
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+   
+    
+
+
+}
+/*if the screen is smaller the logo decreases*/
+@media screen and (min-width: 360px){
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    
+}
+
+
+/*all headings style */
+
+h1{
+    font-size: 100px;
+    font-family: "Protest Guerrilla" , sans-serif;
+}
+
+
+
+
+h2{
+   font-family: "Protest Guerrilla" , sans-serif;  
+}
+
+p{
+   font-family: "Josefin Sans", sans-serif;  
+}
+
+
+
+.top{
+    margin-top: 50px;
+    margin-left:50px;
+    margin-right:50px ;
+    
+}
+
+.top h1{
+    margin-top: 50px;
+}
+
+.top h2{
+    font-size: 35px;
+    font-family: "Protest Guerrilla" , sans-serif;
+    margin-top:-70px;
+    
+    
+}
+
+.top p{
+  
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-right: 0%;
+}
+
+/*changes when the screen is 360px, 540px ,720px, 1024px*/
+/*small mobile devices */
+@media screen and (min-width: 360px) {
+    /*margin padding for specific spaces */
+    .top{
+        margin-top: 20px;
+        margin-left: 12px;
+        margin-right:12px
+    }
+    .top h1{
+        margin-top: 12px;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .top h2{
+        font-size: 40px;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .top p{
+        font-size: 18px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+}
+/*for large mobile screen*/
+@media screen and (min-width: 540px) {
+    .top{
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right:20px
+    }
+    .top h1{
+        text-align: center;
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+    .top h2{
+        font-size: 50px;
+        text-align: center;
+        margin-top: -20px;
+    }
+}
+/*Tablet screen */
+@media screen and (min-width: 720px) {
+    .top {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right:30px
+    }
+    .top p {
+        margin-right: 15%;
+    }
+}
+/*Desktop screen */
+@media screen and (min-width: 1024px) {
+    .top {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right:50px
+    }
+    .top h1{
+        text-align: left;
+        font-size: 90px;
+        margin-bottom: 20px;
+    }
+    .top h2{
+        font-size: 40px;
+        text-align: left;
+        margin-top: -20px;
+    }
+    .top p {
+        margin-right: 15%;
+    }
+}
+
+
+
+
+
+/*navigation bar */
+.navbar ul{
+    display: flex;  
+    align-items: center;  /*aligns items in the center of the container */
+    justify-content: center; 
+    list-style-type: none; /*list style*/
+    
+      
+    
+   
+
+}
+.navbar ul li{
+    display: inline-block; /*display inline header*/
+    margin: 0px 280px; 
+    list-style-type:none;
+}
+    
+.navbar ul li a {
+    color: rgb(0, 0, 0);/*coolor of the text*/
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif; 
+    
+}
+
+
+
+@media screen and (min-width: 360px) {
+    .navbar ul li {
+        margin: 0px 10px;
+    }
+}
+
+
+@media screen  and (min-width: 540px) {
+    .navbar ul li {
+        margin: 0px 30px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 720px) {
+    .navbar ul li {
+        margin: 0px 30px; 
+    }
+}
+
+
+
+@media screen and (min-width:1025px ) {
+    .navbar ul li {
+        gap:20px;
+        margin: 0px 150px;
+    }
+    
+}
+
+/*end */
+
+
+
+/*headings and paragrapphs */
+.container{
+    display: grid; 
+    gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+
+    
+
+}
+.paragraph{
+    padding: 15px;
+    
+}
+/*small screen mobile device*/
+@media screen and (min-width: 360px){
+    .container{
+        margin-left:12px;
+        margin-right:12px;
+    }
+    .paragraph h2{
+        text-align: center;
+        font-size: 40px;
+        
+    }
+    
+}
+/*large screen mobile device */
+@media screen and (min-width: 540px){
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+/*tablet screen */
+@media screen and (min-width: 720px){
+    .conttainer{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+
+/*desktop screen */
+@media screen and (min-width: 1024px)
+ {
+    .container{
+        display: grid;
+        column-count: 3;
+    }
+    
+    .paragraph{
+        column-count: 3;
+    }
+    .paragraph h2{
+        text-align: left;
+        font-size: 30px;
+        
+    }
+ }
+
+ 
+    
+
+
+ 
+
+
+
+/*images grid */
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);/*this is 3 columns*/
+    gap:0px;  /*the space between the images */
+    
+   
+}
+
+.large-item{
+    grid-column:span 1 ; /*making the first image span 3 colummns*/
+    width: 100%;/*this is a responsive width*/
+    height:auto;/*to maintain aspect ratio*/
+    
+}
+
+.small-items{
+    display:grid;
+    grid-template-columns:repeat(2,1fr); /*this is the 2 columsn for the smaller items (image 2 n 3 )*/
+    gap:0px;/*space between the images */
+}
+.grid-item{
+    width:100%;/*its responsive width for all of the images */
+    height:auto;
+}
+
+
+
+@media (min-width: 540px)  and (max-width: 740px) {
+    /* Tablet size adjustments */
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* Keep two columns */
+    }
+    
+
+    .large-item:nth-child(1) {
+        display: none; /* Hide the fourth image on tablet screens */
+    }
+    
+    .grid-item:nth-child(5) {
+        display: none; /* Hide the fifth image on tablet screens */
+    }
+}
+
+
+@media(max-width:540px){
+    /*if the screen width is less than 740px, the grid will have 1 column for each image */
+   .grid-container{
+    grid-template-columns: 2fr;
+    
+}
+  .grid-item:nth-child(4){
+    display:none; /*this hides one image when the screen is smaller */
+  }
+
+  .small-items{
+    grid-template-columns:1fr; /*to stack the small images vertically */
+  }
+
+  .large-item{
+    grid-column:span 1;/*it resets to span 1 column on a smaller screens*/
+  }
+}
+ 
+/*end*/
+
+
+
+
+/*artist description*/
+
+
+.author {
+    margin-top:40px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.author h2{
+    text-align: center; /*centering the heading for the author */
+}
+
+.textdisc{
+    flex: 1;
+    margin-left: 20px; /* space between image and text */
+}
+
+
+
+.author .image {
+    max-width: 200px; /* adjust the size as neeeded */
+    height: auto;
+    border-radius: 50%; /*making the border round or the profile circle*/
+}
+
+/* responsive*/
+@media (min-width:360px){
+    .author h2{
+        font-size: 40px;
+    }
+    .textdisc{
+        margin-left: 0; 
+        margin-right: 0;
+
+    }
+
+}
+
+@media (min-width: 540px){
+    .author h2{
+        font-size: 60px;
+    }
+    .textdisc{
+        margin-left: 0; 
+        margin-right: 0;
+    }
+}
+
+
+
+
+@media (max-width: 740px) {
+    .author {
+        flex-direction: column; /* stack items vertically */
+        align-items: center; /* center thr items */
+    }
+    .author h2{
+        font-size: 30px; /* this is the space below the heading */
+    }
+
+    .textdisc {
+        order: 1; /* positioning the text below image */
+       text-align: left; /* centering the text */
+    }
+
+    .image {
+        order: 0; /* positioning the  image above text */
+        margin-bottom: 20px; /* this is the space below the image */
+    }
+}
+
+    
+/*end */
+
+
+
+
+
+
+
+
+
+
+/*footer */
+.footer{
+    background-color: #14181d;
+    padding: 20px;/* padding around the footer */
+    color: rgb(255, 255, 255);/* the color of the text in the footer*/
+    text-align: center;/*to align the text in the center */
+}
+
+
+
+
+@media  (min-width: 540px) {
+    .footer {
+        padding: 15px;
+    }
+    
+}
+
+@media  (min-width: 768px) {
+    .footer {
+        padding: 20px;
+        display: absolute;
+        transform: translate(-0%, 33%);
+      
+
+    }
+    
+}
+
+
+
+
+
+
+
