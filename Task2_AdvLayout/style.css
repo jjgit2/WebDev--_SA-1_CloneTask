@@ -1,0 +1,313 @@
+
+/*importing fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap"); /*importing font from google font*/
+
+body {
+  background-color: #4dccbd; /*the background color */
+  margin: 0px;
+  
+  
+}
+
+.navbar{
+  display: flex; /*this is the navigation bar */
+  background-color: #ffffff;
+  padding: 10px 20px; /*padding for the navigation bar  */
+  align-items: center; /*to align the items in the center*/
+  justify-content: space-between; /*justify the content in the center*/
+  box-shadow: 10px 10px #EEF36A;  /*background shadow*/
+}
+
+.logo{
+  color: black; /*background color*/
+  font-size: 3em; /* specific font size*/
+  font-weight: bold; /*specific font weight*/
+  font-family: Teko; /*specific font family*/
+}
+.nav-links{ /*navigation links*/
+  display:flex;  
+  list-style: none; /*list style */
+  gap:20px; /*gap for space*/
+  margin:0;
+  padding:0;
+}
+
+.nav-links li{ 
+  display:inline; /*display inline content for navigation links*/
+  font-family: Teko; /*specific font family*/
+  font-size: 2em; /*specific font size*/
+  
+
+
+}
+
+.nav-links a{
+  color:black; /*background color*/
+  text-decoration: none; /*text-decoration style */
+}
+
+.search-con{
+  display: flex; /*display inline content for search results*/
+  align-items: center; /*items in the center*/
+ 
+}
+/*button style */
+.search-con button{
+  background-color: #231651;
+  border: none; /*border style */
+  border-radius: 10px; /*edges to be round */
+  color: #ffffff; /*color of the text */
+  font-size: 2em; /* specific font size */
+  width:80px;
+  height:auto; 
+  font-family: Teko; /* default font size */
+  cursor: pointer; /* cursor position */
+}
+.search-con button:hover{ 
+  background-color: #070410; /* background color of the search button */
+}
+
+
+
+
+
+main { 
+  display: flex; /* default flex layout */
+  flex-wrap: wrap; 
+  max-width: 900px;  /* default max width */
+  font-size: 1.5em; /* default font size */
+  padding: 16px; /* default padding */
+  margin: 0 auto;
+ 
+}
+
+
+.poster { 
+  display: flex; 
+  flex-direction: column; /* default direction */
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  box-shadow: 10px 10px  #EEF36A;
+}
+
+/*description of the movie */
+.desc { 
+  padding: 16px;
+  display: flex;
+  font-family: Lato;
+}
+
+
+.desc p {
+  padding: 16px;
+  font-size: 2em;
+  color: #070410; 
+}
+
+/*descrption button style */
+.desc button {
+  background-color: #231651;
+  color: #ffffff;
+  justify-content: center;
+  font-size: 2em; 
+  border: none;
+  border-radius: 16px;
+  font-family: "Teko"; /*Teko font family*/
+  
+}
+
+
+.desc button:hover { 
+  background-color: #070410;
+  
+}
+
+/*screen for mobile device */
+@media only screen and (min-width: 360px) and (max-width: 720px) {
+  .logo {
+    font-size: 2em;  /* font size for mobile devices */
+    margin: 0;
+  }
+  .nav-links {
+    display: none;  /* hidden display nav links */
+  }
+  .search-con button {
+    font-size: 2em;
+  }
+
+  main {
+    margin: 16px auto; 
+  }
+
+  .poster img {
+    width: 100%;
+    -o-object-fit: contain; /*to fit the image for the mobile device screen*/
+       object-fit: contain;
+  }
+  .desc {
+    flex-direction: column;
+  }
+  .desc p {
+    font-size: 16px;
+    padding: 0;
+  }
+  .desc button {
+    font-size: 2em; /* size of the description button in the mobile device screen */
+    padding: auto;
+    flex-direction: row;
+  }
+}
+
+/*table screen */
+@media screen and (min-width: 719px) and (max-width: 1014px) {
+  .logo {
+    padding: 16px;
+    margin: 0;
+    font-size: 3em; /* font-size: 3em*/
+  }
+  .nav-links  {
+    display: flex; 
+    padding: 16px;
+    margin: 0;
+  }
+  .nav-links li {
+    font-size: 1.5em;
+  }
+ 
+  .search-con button {
+     padding: auto;
+  }
+
+
+
+  main {
+    gap: 16px;
+  }
+  .poster {
+    flex-direction: column;
+    overflow: hidden; 
+    width: 48%;
+    
+  }
+  main img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+ .desc {
+    justify-content: space-between; /*space between items, to create equal gaps */
+    flex-grow: 1; /* this allows the element to grow and take up the available space within the container */
+  }
+ .desc p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+ .desc button {
+    display: flex;  
+   font-size: 2em;
+   
+  }
+}
+
+
+
+
+/* desktop screen or larger */
+@media screen and (min-width: 1024px) {
+   
+  
+
+  .logo{
+    padding: 16px;
+    margin: 0;
+    font-size: 3em;
+  }
+  .nav-links li{
+    padding: 16px;
+    margin: 0;
+  }
+
+
+
+
+  .poster {
+    margin: 3em auto;
+    font-size: 16px;
+    
+  }
+  .desc {
+    display: flex;
+    font-size: 16px;
+    font-family: Lato;
+    
+  }
+ /* For the first movie poster */
+
+  .poster:nth-child(1) {
+    flex-direction: column; /* stacks the child elements vertically (flex column layout) */
+  }
+  .poster:nth-child(1) img {
+    height: 450px; /* this sets the image height to 450px and cover the container area */
+    -o-object-fit: cover;
+       object-fit: cover; /* making sure the image covers the space without distorting */
+  }
+  .poster:nth-child(1) .desc p {
+    width: 80%; /* this sets the paragraph width to 80% and remove padding/margin */
+    padding: 0;
+    margin: 0;
+  }
+  .poster:nth-child(1) .desc button {
+    padding: 16px; /* add padding to the button, let it grow to fill space, and make the text large */
+    flex-grow: 1;
+    font-size: 48px;
+  }
+
+
+  /* for the second and third posters (two-column layout) */
+  .poster:nth-child(2), .poster:nth-child(3) {
+    margin-right: 16px; /* adding right margin and set the width of each poster */
+    width: 45%;
+    flex-direction: column;  /* stacks the elements vertically */
+    flex-grow: 1; /* it allows the posters to grow and fill available space */
+   
+  }
+  .poster:nth-child(2) .desc , .poster:nth-child(3) .desc {
+    height: 100%; /* make the description section fill the height and distribute space between elements */
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .poster:nth-child(2) .desc p, .poster:nth-child(3) .desc p {
+    padding: 0; /* removing the padding and margin from paragraphs */
+    margin: 0;
+   
+  }
+  .poster:nth-child(2) .desc button, .poster:nth-child(3) .desc button {
+    font-size: 48px; /*making the button text large*/
+  }
+
+
+
+  /*for the last three horizontal movie posters*/
+  .poster:nth-child(4), .poster:nth-child(5), .poster:nth-child(6) {
+    flex-direction: row; /*setting the movie posters to be laid out ina row */
+  }
+  .poster:nth-child(4) img, .poster:nth-child(5) img, .poster:nth-child(6) img {
+    height: 450px; /*setting the img height to 450px to make sure the img fits in the container without it getting distort*/
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .poster:nth-child(4) .desc, .poster:nth-child(5) .desc, .poster:nth-child(6) .desc {
+    flex: 1; /*this allows the descriptino section to grow and add some padding*/
+    flex-direction: column;
+    padding: 16px;
+  }
+  .poster:nth-child(4) .desc p, .poster:nth-child(5) .desc p, .poster:nth-child(6) .desc p {
+    margin: 0;/*this removes the margin and padding for paragrapg inside the description*/
+    padding: 0;
+    
+  }
+  .poster:nth-child(4) .desc button, .poster:nth-child(5) .desc button, .poster:nth-child(6) .desc button {
+    font-size: 48px;
+  }
+}
